@@ -12,7 +12,7 @@ body {
 .top-line{
   color: #cecbcb; 
   background-color: #351765;  
-  padding: 20px 0;  /* top and bottom padding is 20px; left and right padding is 0 */
+  padding: 20px;  /* top and bottom padding is 20px; left and right padding is 0 */
 }
 .flex-container {
   display: flex;
@@ -20,6 +20,38 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.brown{
+     flex: 0 0 50px;
+     background-color: #7c7676; 
+     padding: 5px; 
+     margin: 0 5px;
+ }
+.darkgray{
+     flex: 0 0 50px;
+     background-color: #333; 
+     color: #cecbcb; 
+     padding: 5px; 
+     margin: 0 5px;
+ }
+.lpurp{
+     flex: 0 0 50px;
+     background-color: #6c4c7b; 
+     padding: 5px; 
+     margin: 0 5px;
+ }
+ .black{
+     flex: 0 0 50px;
+     background-color: #0b0b0b; 
+     color: #cecbcb;
+     padding: 5px; 
+     margin: 0 5px;
+ }
+.dpurp{
+     flex: 0 0 50px;
+     background-color: #351765; 
+     padding: 5px; 
+     margin: 0 5px;
+ }   
 </style>
 <div class='top-line'>  <div style="margin-left: 40px; margin-right: 40px"> <font face="Segoe UI"> 
     <p> <span style="float:left;"> Amherst College </span> <span style="float:right;"> Fall 2019 </span> </p> 
@@ -31,37 +63,37 @@ body {
 <br>
   <font face="Segoe UI">
   <div class="flex-container">
-  <div style="flex-grow: 0; background-color: #7c7676; padding: 5px; margin: 0 5px;"> 
-        <h4> [temporary header: need project title] </h4> 
-        <p> Does a metropolitan area's economic vitality correlate with better performance on the court or field?  Do certain economic indicators, such as GDP or disposable income, correlate better with team performance?  Are some sports success more closely linkes to economic prosperity than others?  These questions stem from a common debate surrounding the net impact of having a professional sports team in a metropolitan area.  On the one hand, the presence of teams can draw tourism, create a thriving retail business, and boost locale morale. On the other hand, the presence of teams can drain taxpayer dollars that could have been allocated elsewhere.  <a href="https://stat231-01-f19.github.io/final-proj-CDC/"> Read more ... </a> </p>  
-  </div>
-  <div style="flex-grow: 3; background-color: #333; color: #cecbcb; padding: 10px; margin: 0 5px;"> 
-      <h4> How has Amherst College thinking evolved over the last 15 years? </h4>
-      <p> In this blog post, we leverage The Amherst Student as a source of understanding what major topics have been on the minds of students over the last 14 years.  We also compare the sentiment in The Amherst Student to the sentiment of Opinion articles.  We investiagte phenomena which we've accepted as Amherst students such as "the spring is always crazier", and understand shifts in the college after key administrative decisions such as financial aid policy changes, party policy, and demographic movements.   <a href=" https://stat231-01-f19.github.io/final-proj-groupC/"> Read more ... </a> </p>
-  </div>
-  <div style="flex-grow: 2; background-color:  #6c4c7b; padding: 10px; margin: 0 5px;"> 
-         <p> 3 Some text introducing cool data science project # 3 <br />
-           <img src="amherst_mammoths.png" /> </p>
-  </div>
-  <div style="flex-grow: 2; background-color: #0b0b0b; color: #cecbcb; padding: 10px; margin: 0 5px;"> 
-        <p> 4 Some text introducing cool data science project # 4 <br />
-          <img src="amherst_mammoths.png" /> </p>
-  </div>
-  <div style="flex-grow: 1; background-color: #351765; padding: 10px; margin: 0 5px;"> 
-        <p> 5 Some text introducing cool data science project # 5 <br />
-          <img src="amherst_mammoths.png" /> </p>
-  </div>
-  <div style="flex-grow: 4; background-color: #7c7676; padding: 10px; margin: 0 5px;"> 
-        <p> 6 Some text introducing cool data science project # 6 <br />
-          <img src="amherst_mammoths.png" /> </p>
-  </div>
-  <div style="flex-grow: 2; background-color:  #6c4c7b; padding: 10px; margin: 0 5px;"> 
-         <p> 7 Some text introducing cool data science project # 7 <br />
-           <img src="amherst_mammoths.png" /> </p>
-  </div>
-    <div style="flex-grow: 3; background-color: #351765; padding: 10px; margin: 0 5px;"> 
-         <p> 8 Some text introducing cool data science project # 8 </p>
-  </div>
+      <div class="brown"> 
+            <h4> [temporary header: need project title] </h4> 
+            <p> Does a metropolitan area's economic vitality correlate with better performance on the court or field?  Do certain economic indicators, such as GDP or disposable income, correlate better with team performance?  Are some sports success more closely linkes to economic prosperity than others?  These questions stem from a common debate surrounding the net impact of having a professional sports team in a metropolitan area.  On the one hand, the presence of teams can draw tourism, create a thriving retail business, and boost locale morale. On the other hand, the presence of teams can drain taxpayer dollars that could have been allocated elsewhere.  <a href="https://stat231-01-f19.github.io/final-proj-CDC/"> Read more ... </a> </p>  
+      </div>
+      <div class="darkgray"> 
+          <h4> How has Amherst College thinking evolved over the last 15 years? </h4>
+          <p> In this blog post, we leverage The Amherst Student as a source of understanding what major topics have been on the minds of students over the last 14 years.  We also compare the sentiment in The Amherst Student to the sentiment of Opinion articles.  We investiagte phenomena which we've accepted as Amherst students such as "the spring is always crazier", and understand shifts in the college after key administrative decisions such as financial aid policy changes, party policy, and demographic movements.   <a href=" https://stat231-01-f19.github.io/final-proj-groupC/"> Read more ... </a> </p>
+      </div>
+      <div class="lpurp"> 
+             <p> 3 Some text introducing cool data science project # 3 <br />
+               <img src="amherst_mammoths.png" /> </p>
+      </div>
+      <div class="black"> 
+            <p> 4 Some text introducing cool data science project # 4 <br />
+              <img src="amherst_mammoths.png" /> </p>
+      </div>
+      <div class="dpurp"> 
+            <p> 5 Some text introducing cool data science project # 5 <br />
+              <img src="amherst_mammoths.png" /> </p>
+      </div>
+      <div class="brown"> 
+            <p> 6 Some text introducing cool data science project # 6 <br />
+              <img src="amherst_mammoths.png" /> </p>
+      </div>
+      <div class="lpurp"> 
+             <p> 7 Some text introducing cool data science project # 7 <br />
+               <img src="amherst_mammoths.png" /> </p>
+      </div>
+      <div class="dpurp"> 
+             <p> 8 Some text introducing cool data science project # 8 </p>
+      </div>
   </div>
 <br>
 <br>
